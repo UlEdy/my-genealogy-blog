@@ -1,10 +1,8 @@
-/** @format */
-
 // interface
-import { HeaderProps } from '../interface/interface';
+import { HeaderProps } from '@interface';
 
 // style
-import '../assets/css/style.css';
+import '@styles';
 
 const Header: React.FC<HeaderProps> = ({ headerText, paragraphText }) => {
     return (
