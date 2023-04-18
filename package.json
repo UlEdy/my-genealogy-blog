@@ -9,6 +9,7 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "@types/styled-components": "^5.1.26",
         "D": "^1.0.0",
         "eslint-import-resolver-alias": "^1.1.2",
         "ra-data-json-server": "^4.9.2",

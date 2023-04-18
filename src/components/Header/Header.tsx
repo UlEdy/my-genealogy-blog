@@ -1,12 +1,12 @@
 // interface
-import { HeaderProps } from '@interface';
+import { HeaderProps } from '@/interface/interface';
 
 // style
-import '@styles';
+import { HeaderWrapper } from './Header.styles';
 
 const Header: React.FC<HeaderProps> = ({ headerText, paragraphText }) => {
     return (
-        <header>
+        <HeaderWrapper>
             <div className='header-img'>
                 <div className='header-text'>
                     <h1>{headerText}</h1>
@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ headerText, paragraphText }) => {
                 </div>
                 <div className='header-bg'></div>
             </div>
-        </header>
+        </HeaderWrapper>
     );
 };
 

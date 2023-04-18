@@ -1,4 +1,8 @@
+// components
 import Header from '@components/Header';
+
+// style
+import '@globalStyle';
 
 const App = () => {
     return (
