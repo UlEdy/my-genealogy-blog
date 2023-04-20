@@ -27,7 +27,7 @@
                 "map": [
                     ["@", "./src"],
                     ["@components", "./src/components"],
-                    ["@globalStyle", "./src/styles/globalStyle.ts"],
+                    ["@styles", "./src/styles"],
                     ["@interface", "./src/interface/interface.ts"],
                     ["@utils", "./src/utils"]
                 ],

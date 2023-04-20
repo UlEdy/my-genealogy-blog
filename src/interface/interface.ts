@@ -1,6 +1,6 @@
 /** @format */
 
 export interface HeaderProps {
-	headerText: string;
-	paragraphText: string;
+    header: string;
+    quote: string;
 }

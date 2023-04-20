@@ -1,4 +1,9 @@
 import styled from 'styled-components';
+
+//colors
+import { themeColors } from '@/styles/colors';
+
+//utils
 import { device } from '@utils/devices';
 
 export const HeaderWrapper = styled.header``;
@@ -10,11 +15,11 @@ export const HeaderImg = styled.div`
     background-size: cover;
     background-position: 0 10%;
 
-    @media ${device.tablet} {
+    @media screen and (${device.tablet}) {
         height: 150px;
     }
 
-    @media ${device.laptop} {
+    @media screen and (${device.laptop}) {
         height: 200px;
     }
 `;
@@ -34,12 +39,12 @@ export const HeaderText = styled.div`
         text-transform: uppercase;
         letter-spacing: 2px;
 
-        @media ${device.mobileL} {
+        @media screen and (${device.mobileL}) {
             margin-bottom: 2px;
             white-space: nowrap;
         }
 
-        @media ${device.laptop} {
+        @media screen and (${device.laptop}) {
             font-size: 2em;
         }
     }
@@ -47,7 +52,7 @@ export const HeaderText = styled.div`
     p {
         display: none;
 
-        @media ${device.mobileL} {
+        @media screen and (${device.mobileL}) {
             display: inline-block;
             margin-top: 2px;
         }
@@ -58,5 +63,5 @@ export const HeaderBackground = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #a98c6f62;
+    background-color: ${themeColors.main};
 `;
