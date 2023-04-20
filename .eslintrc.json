@@ -28,7 +28,8 @@
                     ["@", "./src"],
                     ["@components", "./src/components"],
                     ["@globalStyle", "./src/styles/globalStyle.ts"],
-                    ["@interface", "./src/interface/interface.ts"]
+                    ["@interface", "./src/interface/interface.ts"],
+                    ["@utils", "./src/utils"]
                 ],
                 "extensions": [".js", ".jsx", ".ts", ".tsx", ".json"]
             }
