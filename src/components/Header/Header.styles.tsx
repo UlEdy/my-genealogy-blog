@@ -9,6 +9,14 @@ export const HeaderImg = styled.div`
     background-image: url('../assets/img/header.png');
     background-size: cover;
     background-position: 0 10%;
+
+    @media ${device.tablet} {
+        height: 150px;
+    }
+
+    @media ${device.laptop} {
+        height: 200px;
+    }
 `;
 
 export const HeaderText = styled.div`
@@ -25,11 +33,23 @@ export const HeaderText = styled.div`
         font-size: 1.6em;
         text-transform: uppercase;
         letter-spacing: 2px;
+
+        @media ${device.mobileL} {
+            margin-bottom: 2px;
+            white-space: nowrap;
+        }
+
+        @media ${device.laptop} {
+            font-size: 2em;
+        }
     }
 
-    @media ${device.laptop} {
-        p {
-            display: none;
+    p {
+        display: none;
+
+        @media ${device.mobileL} {
+            display: inline-block;
+            margin-top: 2px;
         }
     }
 `;
