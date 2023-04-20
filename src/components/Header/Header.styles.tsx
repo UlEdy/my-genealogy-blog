@@ -31,7 +31,7 @@ export const HeaderText = styled.div`
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
-    text-shadow: 2px 2px 5px #000000b0;
+    text-shadow: 2px 2px 5px ${themeColors.shadow};
     z-index: 1;
 
     h1 {
