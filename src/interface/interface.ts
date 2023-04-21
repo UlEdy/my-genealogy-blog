@@ -1,6 +1,18 @@
 /** @format */
 
+import { ThemedStyledProps } from 'styled-components';
+
 export interface HeaderProps {
     header: string;
     quote: string;
+}
+
+export interface NavItemProps {
+    label: string;
+    isShow: boolean;
+}
+
+export interface SingleNavItemProps
+    extends ThemedStyledProps<React.HTMLProps<HTMLAnchorElement>, any> {
+    isShow?: boolean;
 }

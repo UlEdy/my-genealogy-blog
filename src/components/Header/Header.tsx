@@ -1,5 +1,5 @@
 // interface
-import { HeaderProps } from '@/interface/interface';
+import { HeaderProps } from '@interface';
 
 // style
 import {

@@ -13,6 +13,6 @@ export const GlobalStyle = createGlobalStyle`
   body {
     height: 100vh;
     font-family: 'Raleway', sans-serif;
-    background: ${themeColors.main};
+    background: ${themeColors.primary};
   }
 `;
