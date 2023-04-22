@@ -15,6 +15,12 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 library.add(faBars);
 
+const navItemsLabel = [
+    { label: 'Blog' },
+    { label: 'Drzewo genealogiczne' },
+    { label: 'O mnie' },
+];
+
 export const Navigation: React.FC = () => {
     const [showMore, setShowMore] = useState(false);
     const handleBurgerClick = () => {
@@ -25,18 +31,13 @@ export const Navigation: React.FC = () => {
             <NavigationBurger onClick={handleBurgerClick}>
                 <StyledFontAwesomeIcon icon={faBars} />
             </NavigationBurger>
-            <NavItem
-                isShow={showMore}
-                label='Blog'
-            />
-            <NavItem
-                isShow={showMore}
-                label='Drzewo genealogiczne'
-            />
-            <NavItem
-                isShow={showMore}
-                label='O mnie'
-            />
+            {navItemsLabel.map((item, index) => (
+                <NavItem
+                    key={`label-${index}`}
+                    isShow={showMore}
+                    label={item.label}
+                />
+            ))}
         </NavigationWrapper>
     );
 };

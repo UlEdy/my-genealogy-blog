@@ -20,8 +20,8 @@
             "@/*": ["./src/*", ""],
             "@components/*": ["./src/components/*", ""],
             "@interface": ["src/interface/interface.ts", ""],
-            "@styles/*": ["src/styles/*", ""],
-            "@utils/*": ["src/utils/*", ""]
+            "@styles": ["src/styles/globalStyle.ts", ""],
+            "@themes": ["src/themes/themes.ts", ""]
         }
     },
 
