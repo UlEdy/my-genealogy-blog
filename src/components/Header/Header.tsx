@@ -9,13 +9,15 @@ import {
     HeaderBackground,
 } from './Header.styles';
 
+import { TextStyle } from '@styles';
+
 const Header: React.FC<HeaderProps> = ({ header, quote }) => {
     return (
         <HeaderWrapper>
             <HeaderImg>
                 <HeaderText className='header-text'>
-                    <h1>{header}</h1>
-                    <p>{quote}</p>
+                    <TextStyle as='h1'>{header}</TextStyle>
+                    <TextStyle>{quote}</TextStyle>
                 </HeaderText>
                 <HeaderBackground />
             </HeaderImg>

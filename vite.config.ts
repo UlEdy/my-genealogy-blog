@@ -9,12 +9,12 @@ export default defineConfig({
         alias: {
             '@': path.resolve(__dirname, './src'),
             '@components': path.resolve(__dirname, './src/components'),
-            '@styles': path.resolve(__dirname, './src/styles'),
+            '@styles': path.resolve(__dirname, './src/styles/globalStyle.ts'),
             '@interface': path.resolve(
                 __dirname,
                 './src/interface/interface.ts'
             ),
-            '@utils': path.resolve(__dirname, './src/utils'),
+            '@themes': path.resolve(__dirname, './src/themes/themes.ts'),
         },
     },
 });

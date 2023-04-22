@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 
-//colors
-import { themeColors } from '@/styles/colors';
-
-//utils
-import { device } from '@utils/devices';
+//themes
+import themes from '@themes';
 
 export const HeaderWrapper = styled.header``;
 
@@ -15,11 +12,11 @@ export const HeaderImg = styled.div`
     background-size: cover;
     background-position: 0 10%;
 
-    @media screen and (${device.tablet}) {
+    @media screen and (${themes.device.tablet}) {
         height: 150px;
     }
 
-    @media screen and (${device.laptop}) {
+    @media screen and (${themes.device.laptop}) {
         height: 200px;
     }
 `;
@@ -31,7 +28,6 @@ export const HeaderText = styled.div`
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
-    text-shadow: 2px 2px 5px ${themeColors.secondary};
     z-index: 1;
 
     h1 {
@@ -39,12 +35,12 @@ export const HeaderText = styled.div`
         text-transform: uppercase;
         letter-spacing: 2px;
 
-        @media screen and (${device.mobileL}) {
+        @media screen and (${themes.device.mobileL}) {
             margin-bottom: 2px;
             white-space: nowrap;
         }
 
-        @media screen and (${device.laptop}) {
+        @media screen and (${themes.device.laptop}) {
             font-size: 2em;
         }
     }
@@ -52,7 +48,7 @@ export const HeaderText = styled.div`
     p {
         display: none;
 
-        @media screen and (${device.mobileL}) {
+        @media screen and (${themes.device.mobileL}) {
             display: inline-block;
             margin-top: 2px;
         }
@@ -63,5 +59,5 @@ export const HeaderBackground = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: ${themeColors.primary};
+    background-color: ${themes.color.primary};
 `;

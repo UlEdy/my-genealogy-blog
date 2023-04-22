@@ -27,9 +27,9 @@
                 "map": [
                     ["@", "./src"],
                     ["@components", "./src/components"],
-                    ["@styles", "./src/styles"],
+                    ["@styles", "./src/styles/globalStyle.ts"],
                     ["@interface", "./src/interface/interface.ts"],
-                    ["@utils", "./src/utils"]
+                    ["@themes", "./src/themes/themes.ts"]
                 ],
                 "extensions": [".js", ".jsx", ".ts", ".tsx", ".json"]
             }

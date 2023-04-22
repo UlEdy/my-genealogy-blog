@@ -1,9 +1,9 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
-//colors
-import { themeColors } from '@/styles/colors';
+//themes
+import themes from '@themes';
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
     margin: 0;
@@ -13,6 +13,12 @@ export const GlobalStyle = createGlobalStyle`
   body {
     height: 100vh;
     font-family: 'Raleway', sans-serif;
-    background: ${themeColors.primary};
+    background: ${themes.color.primary};
   }
 `;
+
+export const TextStyle = styled.p`
+    text-shadow: 2px 2px 5px ${themes.color.secondary};
+`;
+
+export default GlobalStyle;

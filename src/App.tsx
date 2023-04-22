@@ -3,7 +3,7 @@ import Header from '@components/Header';
 import Navigation from '@components/Navigation';
 
 // style
-import { GlobalStyle } from '@styles/globalStyle';
+import GlobalStyle from '@styles';
 
 const App = () => {
     return (
