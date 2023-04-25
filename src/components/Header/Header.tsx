@@ -16,8 +16,13 @@ const Header: React.FC<HeaderProps> = ({ header, quote }) => {
         <HeaderWrapper>
             <HeaderImg>
                 <HeaderText className='header-text'>
-                    <TextStyle as='h1'>{header}</TextStyle>
-                    <TextStyle>{quote}</TextStyle>
+                    <TextStyle
+                        shadow
+                        as='h1'
+                    >
+                        {header}
+                    </TextStyle>
+                    <TextStyle shadow>{quote}</TextStyle>
                 </HeaderText>
                 <HeaderBackground />
             </HeaderImg>

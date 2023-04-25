@@ -1,5 +1,8 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
+//interface
+import { TextStyleProps } from '@interface';
+
 //themes
 import themes from '@themes';
 
@@ -16,8 +19,12 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const TextStyle = styled.p`
-    text-shadow: 3px 3px 3px ${themes.color.shadow};
+export const TextStyle = styled.p<TextStyleProps>`
+    display: block;
+    ${props =>
+        props.shadow && `text-shadow: 3px 3px 3px ${themes.color.shadow}`};
+    text-align: center;
+    justify-content: center;
 `;
 
 export default GlobalStyle;
