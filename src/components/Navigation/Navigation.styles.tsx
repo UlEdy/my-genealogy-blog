@@ -9,13 +9,28 @@ import { SingleNavItemProps } from '@interface';
 //theme
 import themes from '@themes';
 
-export const NavigationWrapper = styled.nav``;
+export const NavigationWrapper = styled.nav`
+    position: relative;
+    top: 0;
+    z-index: 1;
+
+    @media screen and (${themes.device.mobileL}) {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background-color: ${themes.color.primary};
+    }
+`;
 
 export const NavigationBurger = styled.button`
-    /* margin-top: 5px; */
     padding: 5px;
-    background: ${themes.color.primaryLight};
-    border: 1px solid ${themes.color.primaryLight};
+    background: ${themes.color.primary};
+    border: 0;
+    border-bottom-right-radius: 20%;
+
+    @media screen and (${themes.device.mobileL}) {
+        display: none;
+    }
 `;
 
 export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
@@ -26,4 +41,20 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
 export const SingleNavItem = styled.a<SingleNavItemProps>`
     display: ${props => (props.isShow ? 'block' : 'none')};
     padding: 0 5px;
+    background-color: ${themes.color.primaryLight};
+    transition: background-color 0.3s;
+    &:hover {
+        background-color: ${themes.color.secondary};
+    }
+
+    @media screen and (${themes.device.mobileL}) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33%;
+    }
+
+    @media screen and (${themes.device.tablet}) {
+        width: 25%;
+    }
 `;

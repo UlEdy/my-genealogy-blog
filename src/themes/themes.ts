@@ -11,7 +11,7 @@ const size = {
 const themes = {
     color: {
         primary: 'rgb(150, 125, 100)',
-        primaryLight: 'rgba(150, 125, 100, 0.25)',
+        primaryLight: 'rgba(150, 125, 100, 0.45)',
         secondary: 'rgb(57, 62, 70)',
         secondaryLight: 'rgb(57, 62, 70, 0.25)',
         shadow: 'rgb(34, 40, 49)',

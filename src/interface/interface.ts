@@ -1,5 +1,3 @@
-/** @format */
-
 import { ThemedStyledProps } from 'styled-components';
 
 export interface HeaderProps {
@@ -15,4 +13,7 @@ export interface NavItemProps {
 export interface SingleNavItemProps
     extends ThemedStyledProps<React.HTMLProps<HTMLAnchorElement>, any> {
     isShow?: boolean;
+}
+export interface TextStyleProps {
+    shadow?: boolean;
 }
