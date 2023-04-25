@@ -14,8 +14,8 @@ export const NavigationWrapper = styled.nav``;
 export const NavigationBurger = styled.button`
     /* margin-top: 5px; */
     padding: 5px;
-    background: ${themes.color.primary};
-    border: 2px solid ${themes.color.primary};
+    background: ${themes.color.primaryLight};
+    border: 1px solid ${themes.color.primaryLight};
 `;
 
 export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
