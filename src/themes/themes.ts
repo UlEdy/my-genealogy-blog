@@ -10,9 +10,12 @@ const size = {
 
 const themes = {
     color: {
-        primary: 'rgba(150, 125, 100, 0.7)',
-        lightPrimary: 'rgba(170, 145, 120, 1)',
-        secondary: 'rgba(0, 0, 0, 0.69)',
+        primary: 'rgb(150, 125, 100)',
+        primaryLight: 'rgba(150, 125, 100, 0.25)',
+        secondary: 'rgb(57, 62, 70)',
+        secondaryLight: 'rgb(57, 62, 70, 0.25)',
+        shadow: 'rgb(34, 40, 49)',
+        font: 'rgb(184, 183, 173)',
     },
 
     device: {

@@ -12,13 +12,12 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     height: 100vh;
-    font-family: 'Raleway', sans-serif;
-    background: ${themes.color.primary};
+    background: ${themes.color.primaryLight};
   }
 `;
 
 export const TextStyle = styled.p`
-    text-shadow: 2px 2px 5px ${themes.color.secondary};
+    text-shadow: 3px 3px 3px ${themes.color.shadow};
 `;
 
 export default GlobalStyle;
