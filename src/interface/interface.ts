@@ -8,6 +8,7 @@ export interface HeaderProps {
 export interface NavItemProps {
     label: string;
     isShow: boolean;
+    path: string;
 }
 
 export interface SingleNavItemProps

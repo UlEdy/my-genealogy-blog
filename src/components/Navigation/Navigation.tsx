@@ -16,9 +16,9 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 library.add(faBars);
 
 const navItemsLabel = [
-    { label: 'Blog' },
-    { label: 'Drzewo genealogiczne' },
-    { label: 'O mnie' },
+    { label: 'Blog', path: '/' },
+    { label: 'Drzewo genealogiczne', path: 'tree' },
+    { label: 'O mnie', path: 'about' },
 ];
 
 export const Navigation: React.FC = () => {
@@ -36,6 +36,7 @@ export const Navigation: React.FC = () => {
                     key={`label-${index}`}
                     isShow={showMore}
                     label={item.label}
+                    path={item.path}
                 />
             ))}
         </NavigationWrapper>
