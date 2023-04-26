@@ -1,5 +1,8 @@
 import styled from 'styled-components';
 
+//components
+import { Link } from 'react-router-dom';
+
 //icon
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -38,10 +41,12 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
     color: ${themes.color.secondary};
 `;
 
-export const SingleNavItem = styled.a<SingleNavItemProps>`
+export const SingleNavItem = styled(Link)<SingleNavItemProps>`
     display: ${props => (props.isShow ? 'block' : 'none')};
     padding: 0 5px;
     background-color: ${themes.color.primaryLight};
+    color: inherit;
+    text-decoration: none;
     transition: background-color 0.3s;
     &:hover {
         background-color: ${themes.color.secondary};

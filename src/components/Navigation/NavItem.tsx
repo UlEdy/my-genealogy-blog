@@ -5,9 +5,12 @@ import { NavItemProps } from '@/interface/interface';
 import { TextStyle } from '@styles';
 import { SingleNavItem } from './Navigation.styles';
 
-const NavItem: React.FC<NavItemProps> = ({ label, isShow }) => {
+const NavItem: React.FC<NavItemProps> = ({ label, isShow, path }) => {
     return (
-        <SingleNavItem isShow={isShow}>
+        <SingleNavItem
+            isShow={isShow}
+            to={path}
+        >
             <TextStyle>{label}</TextStyle>
         </SingleNavItem>
     );
