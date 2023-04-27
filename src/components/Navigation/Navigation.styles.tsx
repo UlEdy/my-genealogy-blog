@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 //icon
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-//interface
+//intefrace
 import { SingleNavItemProps } from '@interface';
 
 //theme
@@ -41,16 +41,14 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
     color: ${themes.color.secondary};
 `;
 
-export const SingleNavItem = styled(Link)<SingleNavItemProps>`
-    display: ${props => (props.isShow ? 'block' : 'none')};
+export const SingleNavItem = styled.div<SingleNavItemProps>`
     padding: 0 5px;
+    display: ${props => (props.isShow ? 'bloc' : 'none')};
     background-color: ${themes.color.primaryLight};
-    color: inherit;
-    text-decoration: none;
-    transition: background-color 0.3s;
     &:hover {
         background-color: ${themes.color.secondary};
     }
+    transition: background-color 0.3s;
 
     @media screen and (${themes.device.mobileL}) {
         display: flex;
@@ -62,4 +60,9 @@ export const SingleNavItem = styled(Link)<SingleNavItemProps>`
     @media screen and (${themes.device.tablet}) {
         width: 25%;
     }
+`;
+
+export const StyledLink = styled(Link)`
+    color: inherit;
+    text-decoration: none;
 `;

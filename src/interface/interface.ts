@@ -11,8 +11,7 @@ export interface NavItemProps {
     path: string;
 }
 
-export interface SingleNavItemProps
-    extends ThemedStyledProps<React.HTMLProps<HTMLAnchorElement>, any> {
+export interface SingleNavItem {
     isShow?: boolean;
 }
 export interface TextStyleProps {
