@@ -11,7 +11,7 @@ export interface NavItemProps {
     path: string;
 }
 
-export interface SingleNavItem {
+export interface SingleNavItemProps {
     isShow?: boolean;
 }
 export interface TextStyleProps {
