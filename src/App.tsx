@@ -1,17 +1,18 @@
 // components
 import Header from '@components/Header';
 import Navigation from '@components/Navigation';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 // style
 import GlobalStyle from '@styles';
 import AboutMe from '@components/About';
 import Blog from '@components/Blog';
+import ErrorPage from '@components/ErrorPage';
 import GenealogyTree from '@components/Tree';
 
 const App = () => {
     return (
-        <Router>
+        <>
             <GlobalStyle />
             <Header
                 header='Genealogia i historie'
@@ -31,8 +32,12 @@ const App = () => {
                     path='about'
                     element={<AboutMe />}
                 />
+                <Route
+                    path='/*'
+                    element={<ErrorPage />}
+                />
             </Routes>
-        </Router>
+        </>
     );
 };
 
