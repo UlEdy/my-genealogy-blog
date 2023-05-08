@@ -42,7 +42,7 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
 `;
 
 export const SingleNavItem = styled.div<SingleNavItemProps>`
-    padding: 0 5px;
+    padding: 0 0.5rem;
     display: ${props => (props.isShow ? 'bloc' : 'none')};
     background-color: ${themes.color.primaryLight};
     &:hover {
