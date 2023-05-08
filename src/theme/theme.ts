@@ -8,7 +8,7 @@ const size = {
     desktop: '2560px',
 };
 
-const themes = {
+const theme = {
     color: {
         primary: 'rgb(150, 125, 100)',
         primaryLight: 'rgba(150, 125, 100, 0.45)',
@@ -30,4 +30,4 @@ const themes = {
     },
 };
 
-export default themes;
+export default theme;

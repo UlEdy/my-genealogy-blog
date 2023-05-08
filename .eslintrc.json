@@ -29,7 +29,7 @@
                     ["@components", "./src/components"],
                     ["@styles", "./src/styles/globalStyle.ts"],
                     ["@interface", "./src/interface/interface.ts"],
-                    ["@themes", "./src/themes/themes.ts"]
+                    ["@theme", "./src/theme/theme.ts"]
                 ],
                 "extensions": [".js", ".jsx", ".ts", ".tsx", ".json"]
             }
