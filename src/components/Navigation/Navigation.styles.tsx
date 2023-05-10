@@ -25,7 +25,8 @@ export const NavigationWrapper = styled.nav`
     }
 `;
 
-export const NavigationBurger = styled.button`
+export const NavigationBurger = styled.button<ShowingProps>`
+    position: ${props => (props.isShow ? 'absolute' : 'relative')};
     padding: 5px;
     background: ${themes.color.primary};
     border: 0;
@@ -44,6 +45,8 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
 export const SingleNavItem = styled.div<ShowingProps>`
     padding: 0 0.5rem;
     display: ${props => (props.isShow ? 'bloc' : 'none')};
+    /* display: ${props => (props.isShow ? 'flex' : 'none')};
+    align-content: stretch; */
     background-color: ${themes.color.primaryLight};
     &:hover {
         background-color: ${themes.color.secondary};
@@ -63,6 +66,7 @@ export const SingleNavItem = styled.div<ShowingProps>`
 `;
 
 export const StyledLink = styled(Link)`
+    width: 100%;
     color: inherit;
     text-decoration: none;
 `;

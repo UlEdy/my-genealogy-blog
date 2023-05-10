@@ -28,7 +28,10 @@ export const Navigation: React.FC = () => {
     };
     return (
         <NavigationWrapper>
-            <NavigationBurger onClick={handleBurgerClick}>
+            <NavigationBurger
+                onClick={handleBurgerClick}
+                isShow={showMore}
+            >
                 <StyledFontAwesomeIcon icon={faBars} />
             </NavigationBurger>
             {navItemsLabel.map((item, index) => (
