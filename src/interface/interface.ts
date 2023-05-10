@@ -1,5 +1,3 @@
-import { ThemedStyledProps } from 'styled-components';
-
 export interface HeaderProps {
     header: string;
     quote: string;
@@ -11,7 +9,13 @@ export interface NavItemProps {
     path: string;
 }
 
-export interface SingleNavItemProps {
+export interface PostProps {
+    text: string;
+    title: string;
+    image?: string;
+}
+
+export interface ShowingProps {
     isShow?: boolean;
 }
 export interface TextStyleProps {

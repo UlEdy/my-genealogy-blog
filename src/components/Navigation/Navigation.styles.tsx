@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 //intefrace
-import { SingleNavItemProps } from '@interface';
+import { ShowingProps } from '@interface';
 
 //theme
 import themes from '@themes';
@@ -41,7 +41,7 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
     color: ${themes.color.secondary};
 `;
 
-export const SingleNavItem = styled.div<SingleNavItemProps>`
+export const SingleNavItem = styled.div<ShowingProps>`
     padding: 0 0.5rem;
     display: ${props => (props.isShow ? 'bloc' : 'none')};
     background-color: ${themes.color.primaryLight};
