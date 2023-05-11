@@ -8,7 +8,7 @@ import {
     NavigationWrapper,
     NavigationBurger,
     StyledFontAwesomeIcon,
-} from './Navigation.styles';
+} from './Layout.styles';
 
 //icon
 import { library } from '@fortawesome/fontawesome-svg-core';

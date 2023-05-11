@@ -7,11 +7,10 @@ import {
     HeaderImg,
     HeaderText,
     HeaderBackground,
-} from './Header.styles';
+} from './Layout.styles';
 
 import { TextStyle } from '@styles';
-
-const Header: React.FC<HeaderProps> = ({ header, quote }) => {
+export const Header: React.FC<HeaderProps> = ({ header, quote }) => {
     return (
         <HeaderWrapper>
             <HeaderImg>
@@ -29,5 +28,3 @@ const Header: React.FC<HeaderProps> = ({ header, quote }) => {
         </HeaderWrapper>
     );
 };
-
-export default Header;
