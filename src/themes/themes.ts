@@ -1,3 +1,5 @@
+import { ThemeConsumer } from 'styled-components';
+
 const size = {
     mobileS: '320px',
     mobileM: '375px',
