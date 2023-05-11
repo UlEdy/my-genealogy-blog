@@ -9,8 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 //interface
 import { ShowingProps } from '@interface';
 
-//themes
-import themes from '@themes';
+//theme
+import theme from '@/theme/theme';
 
 export const LayoutContainer = styled.div`
     position: sticky;
@@ -28,11 +28,11 @@ export const HeaderImg = styled.div`
     background-size: cover;
     background-position: 0 10%;
 
-    @media screen and (${themes.device.tablet}) {
+    @media screen and (${theme.device.tablet}) {
         height: 110px;
     }
 
-    @media screen and (${themes.device.laptop}) {
+    @media screen and (${theme.device.laptop}) {
         height: 120px;
     }
 `;
@@ -50,12 +50,12 @@ export const HeaderText = styled.div`
         text-transform: uppercase;
         letter-spacing: 2px;
 
-        @media screen and (${themes.device.mobileL}) {
+        @media screen and (${theme.device.mobileL}) {
             margin-bottom: 2px;
             white-space: nowrap;
         }
 
-        @media screen and (${themes.device.laptop}) {
+        @media screen and (${theme.device.laptop}) {
             font-size: 2em;
         }
     }
@@ -63,7 +63,7 @@ export const HeaderText = styled.div`
     p {
         display: none;
 
-        @media screen and (${themes.device.mobileL}) {
+        @media screen and (${theme.device.mobileL}) {
             display: inline-block;
             margin-top: 2px;
         }
@@ -74,15 +74,15 @@ export const HeaderBackground = styled.div`
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: ${themes.color.primaryLight};
+    background-color: ${theme.color.primaryLight};
 `;
 
 export const NavigationWrapper = styled.nav`
-    @media screen and (${themes.device.mobileL}) {
+    @media screen and (${theme.device.mobileL}) {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: ${themes.color.primary};
+        background-color: ${theme.color.primary};
         height: 3rem;
     }
 `;
@@ -91,18 +91,18 @@ export const NavigationBurger = styled.button<ShowingProps>`
     position: absolute;
     padding: 5px;
     transform: translate(0, -100%);
-    background: ${themes.color.primary};
+    background: ${theme.color.primary};
     border: 0;
     border-bottom-right-radius: 20%;
 
-    @media screen and (${themes.device.mobileL}) {
+    @media screen and (${theme.device.mobileL}) {
         display: none;
     }
 `;
 
 export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
     font-size: 24px;
-    color: ${themes.color.secondary};
+    color: ${theme.color.secondary};
 `;
 
 export const SingleNavItem = styled.div<ShowingProps>`
@@ -110,15 +110,15 @@ export const SingleNavItem = styled.div<ShowingProps>`
     display: ${props => (props.isShow ? 'flex' : 'none')};
     align-items: center;
     height: 100%;
-    background-color: ${themes.color.primary};
+    background-color: ${theme.color.primary};
 
     &:hover {
-        background-color: ${themes.color.secondary};
+        background-color: ${theme.color.secondary};
     }
 
     transition: background-color 0.3s;
 
-    @media screen and (${themes.device.mobileL}) {
+    @media screen and (${theme.device.mobileL}) {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -126,7 +126,7 @@ export const SingleNavItem = styled.div<ShowingProps>`
         width: 33%;
     }
 
-    @media screen and (${themes.device.tablet}) {
+    @media screen and (${theme.device.tablet}) {
         flex-grow: 0;
         width: 25%;
     }

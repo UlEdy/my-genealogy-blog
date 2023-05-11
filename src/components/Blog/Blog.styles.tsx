@@ -4,8 +4,8 @@ import styled from 'styled-components';
 //interface
 import { ImageProps } from '@/interface/interface';
 
-//themes
-import themes from '@themes';
+//theme
+import theme from '@/theme/theme';
 
 export const ImagePost = styled.img<ImageProps>`
     max-width: 40%;
@@ -33,7 +33,7 @@ export const ContentPost = styled.div`
     justify-self: center;
     align-items: center;
     flex-direction: column;
-    @media screen and (${themes.device.mobileL}) {
+    @media screen and (${theme.device.mobileL}) {
         display: inline-block;
     }
 `;
