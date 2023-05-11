@@ -14,8 +14,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    height: 100vh;
-    background: ${theme.color.primaryLight};
+    min-height: 100vh;
+    height: 100%;
+    background: ${themes.color.primaryLight};
   }
 `;
 

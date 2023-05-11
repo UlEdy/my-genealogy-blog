@@ -6,8 +6,8 @@ import { NavLink } from 'react-router-dom';
 //icon
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-//interface
-import { SingleNavItemProps } from '@interface';
+//intefrace
+import { ShowingProps } from '@interface';
 
 //theme
 import theme from '@theme';
@@ -25,7 +25,8 @@ export const NavigationWrapper = styled.nav`
     }
 `;
 
-export const NavigationBurger = styled.button`
+export const NavigationBurger = styled.button<ShowingProps>`
+    position: ${props => (props.isShow ? 'absolute' : 'relative')};
     padding: 5px;
     background: ${theme.color.primary};
     border: 0;
@@ -41,10 +42,11 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
     color: ${theme.color.secondary};
 `;
 
-export const SingleNavItem = styled.div<SingleNavItemProps>`
-    padding: 0 5px;
-    display: ${props => (props.isShow ? 'bloc' : 'none')};
-    background-color: ${theme.color.primaryLight};
+export const SingleNavItem = styled.div<ShowingProps>`
+    padding: 0 0.5rem;
+    display: ${props => (props.isShow ? 'block' : 'none')};
+    background-color: ${themes.color.primaryLight};
+
     &:hover {
         background-color: ${theme.color.secondary};
     }
