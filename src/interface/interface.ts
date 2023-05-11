@@ -13,6 +13,7 @@ export interface PostProps {
     text: string;
     title: string;
     image?: string;
+    altText?: string;
 }
 
 export interface ShowingProps {

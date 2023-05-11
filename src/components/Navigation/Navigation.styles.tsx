@@ -44,9 +44,7 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
 
 export const SingleNavItem = styled.div<ShowingProps>`
     padding: 0 0.5rem;
-    display: ${props => (props.isShow ? 'bloc' : 'none')};
-    /* display: ${props => (props.isShow ? 'flex' : 'none')};
-    align-content: stretch; */
+    display: ${props => (props.isShow ? 'block' : 'none')};
     background-color: ${themes.color.primaryLight};
     &:hover {
         background-color: ${themes.color.secondary};
