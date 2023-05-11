@@ -14,7 +14,7 @@ export default defineConfig({
                 __dirname,
                 './src/interface/interface.ts'
             ),
-            '@themes': path.resolve(__dirname, './src/themes/themes.ts'),
+            '@theme': path.resolve(__dirname, './src/theme/theme.ts'),
         },
     },
 });

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 //components
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 //icon
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,61 +10,61 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ShowingProps } from '@interface';
 
 //theme
-import themes from '@themes';
+import theme from '@theme';
 
 export const NavigationWrapper = styled.nav`
     position: relative;
     top: 0;
     z-index: 1;
 
-    @media screen and (${themes.device.mobileL}) {
+    @media screen and (${theme.device.mobileL}) {
         position: relative;
         display: flex;
         justify-content: center;
-        background-color: ${themes.color.primary};
+        background-color: ${theme.color.primary};
     }
 `;
 
 export const NavigationBurger = styled.button<ShowingProps>`
     position: ${props => (props.isShow ? 'absolute' : 'relative')};
     padding: 5px;
-    background: ${themes.color.primary};
+    background: ${theme.color.primary};
     border: 0;
     border-bottom-right-radius: 20%;
 
-    @media screen and (${themes.device.mobileL}) {
+    @media screen and (${theme.device.mobileL}) {
         display: none;
     }
 `;
 
 export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
     font-size: 24px;
-    color: ${themes.color.secondary};
+    color: ${theme.color.secondary};
 `;
 
 export const SingleNavItem = styled.div<ShowingProps>`
     padding: 0 0.5rem;
     display: ${props => (props.isShow ? 'block' : 'none')};
     background-color: ${themes.color.primaryLight};
+
     &:hover {
-        background-color: ${themes.color.secondary};
+        background-color: ${theme.color.secondary};
     }
     transition: background-color 0.3s;
 
-    @media screen and (${themes.device.mobileL}) {
+    @media screen and (${theme.device.mobileL}) {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 33%;
     }
 
-    @media screen and (${themes.device.tablet}) {
+    @media screen and (${theme.device.tablet}) {
         width: 25%;
     }
 `;
 
-export const StyledLink = styled(Link)`
-    width: 100%;
+export const StyledLink = styled(NavLink)`
     color: inherit;
     text-decoration: none;
 `;
