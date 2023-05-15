@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { ShowingProps } from '@interface';
 
 //theme
-import theme from '@/theme/theme';
+import theme from '@theme';
 
 export const LayoutContainer = styled.div`
     position: sticky;
@@ -71,8 +71,6 @@ export const HeaderText = styled.div`
 `;
 
 export const HeaderBackground = styled.div`
-    position: absolute;
-    width: 100%;
     height: 100%;
     background-color: ${theme.color.primaryLight};
 `;

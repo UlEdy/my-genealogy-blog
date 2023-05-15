@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { ImageProps } from '@/interface/interface';
 
 //theme
-import theme from '@/theme/theme';
+import theme from '@theme';
 
 export const ImagePost = styled.img<ImageProps>`
     max-width: 40%;
