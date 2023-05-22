@@ -5,7 +5,6 @@ import { ContentPost, TitlePost, TextPost, ImagePost } from './Blog.styles';
 import { PostProps } from '@interface';
 
 export const Post: React.FC<PostProps> = ({ title, text, image, altText }) => {
-    console.log(Boolean(image));
     return (
         <>
             <TitlePost>{title}</TitlePost>

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 //components
 import { NavLink } from 'react-router-dom';
@@ -103,35 +103,34 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
     color: ${theme.color.secondary};
 `;
 
-export const SingleNavItem = styled.div<ShowingProps>`
-    padding: 0 0.5rem;
-    display: ${props => (props.isShow ? 'flex' : 'none')};
-    align-items: center;
-    height: 100%;
-    background-color: ${theme.color.primary};
-
-    &:hover {
-        background-color: ${theme.color.secondary};
-    }
-
-    transition: background-color 0.3s;
-
-    @media screen and (${theme.device.mobileL}) {
-        display: flex;
-        justify-content: center;
+export const StyledLink = styled(({ isShow, ...rest }) => (
+    <NavLink {...rest} />
+))(
+    ({ isShow }) => css<ShowingProps>`
+        width: 100%;
+        height: 100%;
+        padding: 0 0.5rem;
+        display: ${() => (isShow ? 'flex' : 'none')};
         align-items: center;
-        flex-grow: 1;
-        width: 33%;
-    }
+        color: inherit;
+        text-decoration: none;
+        background-color: ${theme.color.primary};
+        &:hover {
+            background-color: ${theme.color.secondary};
+        }
 
-    @media screen and (${theme.device.tablet}) {
-        flex-grow: 0;
-        width: 25%;
-    }
-`;
+        transition: background-color 0.3s;
 
-export const StyledLink = styled(NavLink)`
-    width: 100%;
-    color: inherit;
-    text-decoration: none;
-`;
+        @media screen and (${theme.device.mobileL}) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            width: 33%;
+        }
+        @media screen and (${theme.device.tablet}) {
+            flex-grow: 0;
+            width: 25%;
+        }
+    `
+);
