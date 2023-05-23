@@ -5,7 +5,7 @@ export interface HeaderProps {
 
 export interface NavItemProps {
     label: string;
-    isShow: boolean;
+    isVisible: boolean;
     path: string;
 }
 

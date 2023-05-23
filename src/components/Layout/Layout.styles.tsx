@@ -103,14 +103,14 @@ export const StyledFontAwesomeIcon = styled(FontAwesomeIcon)`
     color: ${theme.color.secondary};
 `;
 
-export const StyledLink = styled(({ isShow, ...rest }) => (
+export const StyledLink = styled(({ isVisible, ...rest }) => (
     <NavLink {...rest} />
 ))(
-    ({ isShow }) => css<ShowingProps>`
+    ({ isVisible }) => css<ShowingProps>`
         width: 100%;
         height: 100%;
         padding: 0 0.5rem;
-        display: ${() => (isShow ? 'flex' : 'none')};
+        display: ${isVisible ? 'flex' : 'none'};
         align-items: center;
         color: inherit;
         text-decoration: none;

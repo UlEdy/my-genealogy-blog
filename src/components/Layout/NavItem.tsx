@@ -1,16 +1,17 @@
 // components
 import { StyledLink } from './Layout.styles';
+
 //interface
 import { NavItemProps } from '@/interface/interface';
 
 //style
 import { TextStyle } from '@styles';
 
-const NavItem: React.FC<NavItemProps> = ({ label, isShow, path }) => {
+const NavItem: React.FC<NavItemProps> = ({ label, isVisible, path }) => {
     return (
         <StyledLink
             to={path}
-            isShow={isShow}
+            isVisible={isVisible}
         >
             <TextStyle>{label}</TextStyle>
         </StyledLink>
