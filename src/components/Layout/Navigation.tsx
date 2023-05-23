@@ -8,7 +8,7 @@ import {
     NavigationWrapper,
     NavigationBurger,
     StyledFontAwesomeIcon,
-} from './Navigation.styles';
+} from './Layout.styles';
 
 //icon
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -30,14 +30,14 @@ export const Navigation: React.FC = () => {
         <NavigationWrapper>
             <NavigationBurger
                 onClick={handleBurgerClick}
-                isShow={showMore}
+                isVisible={showMore}
             >
                 <StyledFontAwesomeIcon icon={faBars} />
             </NavigationBurger>
             {navItemsLabel.map((item, index) => (
                 <NavItem
                     key={`label-${index}`}
-                    isShow={showMore}
+                    isVisible={showMore}
                     label={item.label}
                     path={item.path}
                 />

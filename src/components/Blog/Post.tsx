@@ -1,14 +1,22 @@
+//components
+import { ContentPost, TitlePost, TextPost, ImagePost } from './Blog.styles';
+
+//interface
 import { PostProps } from '@interface';
 
 export const Post: React.FC<PostProps> = ({ title, text, image, altText }) => {
     return (
         <>
-            <h3>{title}</h3>
-            <p>{text}</p>
-            <img
-                src={image}
-                alt={altText}
-            />
+            <TitlePost>{title}</TitlePost>
+            <ContentPost>
+                {image && (
+                    <ImagePost
+                        src={image}
+                        alt={altText}
+                    />
+                )}
+                <TextPost>{text}</TextPost>
+            </ContentPost>
         </>
     );
 };

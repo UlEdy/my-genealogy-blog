@@ -5,15 +5,18 @@ export interface HeaderProps {
 
 export interface NavItemProps {
     label: string;
-    isShow: boolean;
+    isVisible: boolean;
     path: string;
 }
 
-export interface PostProps {
-    text: string;
-    title: string;
+export type ImageProps = {
     image?: string;
     altText?: string;
+};
+
+export interface PostProps extends ImageProps {
+    text: string;
+    title: string;
 }
 
 export interface ShowingProps {
