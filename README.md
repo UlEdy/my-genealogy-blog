@@ -38,4 +38,4 @@ $ yarn install
 ```bash
 $ yarn dev
 ```
-
+The application will be available at http://localhost:5173/
