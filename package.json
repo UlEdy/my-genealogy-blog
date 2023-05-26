@@ -13,6 +13,7 @@
         "@fortawesome/free-solid-svg-icons": "^6.4.0",
         "@fortawesome/react-fontawesome": "^0.2.0",
         "@types/styled-components": "^5.1.26",
+        "axios": "^1.4.0",
         "eslint-import-resolver-alias": "^1.1.2",
         "ra-data-json-server": "^4.9.2",
         "react-admin": "^4.9.2",
