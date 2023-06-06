@@ -19,6 +19,11 @@ export interface PostProps extends ImageProps {
     title: string;
 }
 
+export interface AboutMeProps {
+    body: string;
+    title: string;
+}
+
 export interface ShowingProps {
     isShow?: boolean;
 }
