@@ -19,6 +19,7 @@
         "paths": {
             "@/*": ["./src/*", ""],
             "@components/*": ["./src/components/*", ""],
+            "@pages/*": ["./src/pages/*", ""],
             "@interface": ["src/interface/interface.ts", ""],
             "@styles": ["src/styles/globalStyle.ts", ""],
             "@theme": ["src/theme/theme.ts", ""]

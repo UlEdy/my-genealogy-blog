@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 //components
-import { Post } from '../Blog/Post';
+import { Post } from '../../components/Blog/Post';
 
 //interface
 import { AboutMeProps } from '@interface';
