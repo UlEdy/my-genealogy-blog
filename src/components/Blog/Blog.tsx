@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, FC } from 'react';
 import axios from 'axios';
 
 //components
@@ -21,17 +21,7 @@ const postList = [
     },
 ];
 
-export const Blog: React.FC = () => {
-    // const [posts, setPosts] = useState([]);
-    // useEffect(() => {
-    //     axios
-    //         .get('https://jsonplaceholder.typicode.com/posts')
-    //         .then(response => {
-    //             console.log(response);
-    //             setPosts(response.data);
-    //         })
-    //         .catch(error => console.log(error));
-    // }, []);
+export const Blog: FC = () => {
     return (
         <>
             {postList.map(({ text, title, image, aleText }, index) => (

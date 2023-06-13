@@ -3,7 +3,7 @@ import { LayoutContainer } from './Layout.styles';
 import { Header } from './Header';
 import { Navigation } from './Navigation';
 
-export const Layout: React.FC = () => {
+export const Layout: FC = () => {
     return (
         <LayoutContainer>
             <Header

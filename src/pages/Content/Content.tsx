@@ -4,8 +4,9 @@ import AboutMe from '@pages/About';
 import Blog from '@components/Blog';
 import ErrorPage from '@components/ErrorPage';
 import GenealogyTree from '@pages/Tree';
+import { FC } from 'react';
 
-export const Content: React.FC = () => {
+export const Content: FC = () => {
     return (
         <Routes>
             <Route

@@ -21,7 +21,7 @@ const navItemsLabel = [
     { label: 'O mnie', path: 'about' },
 ];
 
-export const Navigation: React.FC = () => {
+export const Navigation: FC = () => {
     const [showMore, setShowMore] = useState(false);
     const handleBurgerClick = () => {
         setShowMore(prevShow => !prevShow);
