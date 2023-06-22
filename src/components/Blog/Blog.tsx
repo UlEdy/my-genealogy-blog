@@ -33,7 +33,6 @@ export const Blog: FC = () => {
                     altText={aleText}
                 />
             ))}
-            ;
         </>
     );
 };
