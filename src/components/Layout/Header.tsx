@@ -10,7 +10,8 @@ import {
 } from './Layout.styles';
 
 import { TextStyle } from '@styles';
-export const Header: React.FC<HeaderProps> = ({ header, quote }) => {
+import { FC } from 'react';
+export const Header: FC<HeaderProps> = ({ header, quote }) => {
     return (
         <HeaderWrapper>
             <HeaderImg>

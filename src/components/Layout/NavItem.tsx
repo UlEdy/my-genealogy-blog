@@ -6,8 +6,9 @@ import { NavItemProps } from '@/interface/interface';
 
 //style
 import { TextStyle } from '@styles';
+import { FC } from 'react';
 
-const NavItem: React.FC<NavItemProps> = ({ label, isVisible, path }) => {
+const NavItem: FC<NavItemProps> = ({ label, isVisible, path }) => {
     return (
         <StyledLink
             to={path}

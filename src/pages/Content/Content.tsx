@@ -1,11 +1,12 @@
 //components
 import { Routes, Route } from 'react-router-dom';
-import AboutMe from '@components/About';
+import AboutMe from '@pages/About';
 import Blog from '@components/Blog';
 import ErrorPage from '@components/ErrorPage';
-import GenealogyTree from '@components/Tree';
+import GenealogyTree from '@pages/Tree';
+import { FC } from 'react';
 
-export const Content: React.FC = () => {
+export const Content: FC = () => {
     return (
         <Routes>
             <Route

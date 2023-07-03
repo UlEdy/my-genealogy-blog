@@ -1,5 +1,5 @@
 // components
-import Content from '@components/Content';
+import Content from '@/pages/Content';
 import Layout from './components/Layout';
 
 // style
