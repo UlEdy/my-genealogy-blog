@@ -25,7 +25,7 @@ export interface AboutMeProps {
 }
 
 export interface ShowingProps {
-    isShow?: boolean;
+    isVisible?: boolean;
 }
 export interface TextStyleProps {
     shadow?: boolean;
