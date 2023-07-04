@@ -14,9 +14,8 @@ export type ImageProps = {
     altText?: string;
 };
 
-export interface PostProps extends ImageProps {
-    text: string;
-    title: string;
+export interface PostProps {
+    post: { text: string; title: string; image?: string; altText?: string };
 }
 
 export interface AboutMeProps {

@@ -24,13 +24,10 @@ const postList = [
 export const Blog: FC = () => {
     return (
         <>
-            {postList.map(({ text, title, image, aleText }, index) => (
+            {postList.map((post, index) => (
                 <Post
                     key={`post-${index}`}
-                    text={text}
-                    title={title}
-                    image={image}
-                    altText={aleText}
+                    post={post}
                 />
             ))}
         </>
